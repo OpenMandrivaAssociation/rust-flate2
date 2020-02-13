@@ -1,0 +1,11 @@
+--- flate2-1.0.13/Cargo.toml	1970-01-01T00:00:00+00:00
++++ flate2-1.0.13/Cargo.toml	2019-11-19T20:10:38.785347+00:00
+@@ -75,8 +75,6 @@
+ rust_backend = ["miniz_oxide"]
+ tokio = ["tokio-io", "futures"]
+ zlib = ["libz-sys"]
+-[target."cfg(all(target_arch = \"wasm32\", not(target_os = \"emscripten\")))".dependencies.miniz_oxide]
+-version = "0.3.5"
+ [badges.appveyor]
+ repository = "alexcrichton/flate2-rs"
+ 
